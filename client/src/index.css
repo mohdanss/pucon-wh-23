@@ -7,9 +7,10 @@
 }
 
 :root {
-	--color-primary: #00adb5;
+	--color-primary: #32e6e2;
 	--color-dark: #393e46;
-	--color-darker: #222831;
+	--color-darker: #0c2a2a;
+	--color-black: #12181f;
 	--color-light: #eeeeee;
 
 	--font-primary: "Poppins", sans-serif;
@@ -19,4 +20,6 @@
 body {
 	margin: 0;
 	font-family: var(--font-primary);
+	background-color: var(--color-black);
+	color: var(--color-light);
 }
