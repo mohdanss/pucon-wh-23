@@ -1,9 +1,9 @@
 import axios from "axios";
 
-const API_SERVER = "https://pucon-23-wh-server.herokuapp.com";
-const LOCAL_API_SERVER = "http://localhost:5000";
+export const API_SERVER = "https://pucon-23-wh-server.herokuapp.com";
+export const LOCAL_API_SERVER = "http://localhost:5000";
 
-const checkBackendConnection = async () => {
+export const checkBackendConnection = async () => {
 	try {
 		const res = await axios.get(`${API_SERVER}/api/test/`);
 		return [true, res?.data.message];
@@ -20,5 +20,3 @@ const checkBackendConnection = async () => {
 		}
 	}
 };
-
-export { checkBackendConnection };

@@ -1,7 +1,15 @@
-import Landing from "../Landing/Landing";
+import AppRouter from "../../router/AppRouter";
+import AppStore from "../../redux/store";
+import React from "react";
 
-function App() {
-	return <Landing />;
-}
+const App = () => {
+	return (
+		<React.StrictMode>
+			<AppStore>
+				<AppRouter />
+			</AppStore>
+		</React.StrictMode>
+	);
+};
 
 export default App;
